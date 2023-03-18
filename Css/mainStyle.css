@@ -1,0 +1,76 @@
+:root{
+   --main-color:#fff;
+}
+body{
+   background: #000;
+}
+.sidebar{
+   position: fixed;
+   display: flex;
+   z-index: 99999;
+   max-width: 25%;
+   margin-top: 0px;
+}
+.menulist{
+   width: 0px;
+   overflow: hidden !important;
+   transition: all 1s;
+}
+.animate__fadeInBottomLeft{
+   --animation-delay:.5s ;
+}
+.menubar{
+   width: 20%;
+   align-items: center;
+   /* border: 1px solid teal; */
+}
+.menubar .btn{
+   cursor: pointer;
+}
+.menubar .btn:focus{
+   all: unset;
+   cursor: pointer
+}
+.list-unstyled li{
+   margin-block: 20px;
+}
+.nav-link{
+   color:rgba(255, 255,255, .8);
+}
+.nav-link:hover{
+   color: rgba(255, 255, 255, 1);
+}
+
+/* ============================================== */
+.card{
+   overflow-y: hidden;
+   border: none;
+   cursor: pointer;
+}
+.card-body{
+   position: absolute;
+   background-color:#f9f6f6ca;
+   height: 100%;
+   width: 100%;
+   top:100%;
+   color: #000;
+   display: flex;
+   align-items: center;
+   transition: top 1s;
+}
+.card:hover .card-body{
+   top: 0;
+}
+#searchByLetter,#searchByName{
+   background-color: transparent;
+   height: 40px;
+   color:#ddd;
+   padding-left: 10px;
+   border: .5px solid #eee;
+   transition: box-shadow 1s ,border-color 1s;
+}
+#searchByLetter:focus,#searchByName:focus{
+   border-color: #86b7fe;
+   outline: 0;
+   box-shadow: 0 0 0 .25rem rgba(13,110,253,.25);
+}
