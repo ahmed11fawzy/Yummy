@@ -572,5 +572,15 @@ function checkPassword(pass){
 }
 
 
-
+(function(){
+   if($(document,window).ready()){
+      $('.sk-circle').css({
+         "display":"none",
+      })
+   }else{
+      $('.sk-circle').css({
+         "display":"block",
+      })
+   }
+})()
 
