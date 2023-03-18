@@ -1,4 +1,3 @@
-new WOW().init();
 
 
 $('.menuBtn').click(function(e){
@@ -7,6 +6,8 @@ $('.menuBtn').click(function(e){
       $(".menulist").css({"width":"80%","padding-left":"20px"})
       $('.menuBtn i').removeClass('fa-bars')
       $('.menuBtn i').addClass('fa-xmark')
+      new WOW().init();
+
    }
    
 
